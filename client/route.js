@@ -6,7 +6,8 @@ import { store, history } from '../imports/redux/initStore'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
-import defaultTheme from '../imports/modules/layout/styles/theme'
+import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
+// import defaultTheme from '../imports/modules/layout/styles/theme'
 
 // Container/Components
 import MainLayout from '../imports/modules/layout/components/MainLayout.jsx'
@@ -18,7 +19,7 @@ const routes =
     <Route path="/" component={HelloWorld} />
   </Route>
 
-const muiTheme = getMuiTheme(defaultTheme)
+const muiTheme = getMuiTheme(baseTheme)
 const App = ({}) => (
   <Provider store={store}>
     <MuiThemeProvider muiTheme={muiTheme}>

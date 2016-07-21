@@ -1,11 +1,12 @@
 import React from 'react';
+import RaisedButton from 'material-ui/RaisedButton';
 
 // TODO: remove it later.
 // just for example.
 
 const HelloWorld = () => (
   <div>
-    <h1>Hello World!</h1>
+    <RaisedButton label="Hello World!" />
   </div>
 )
 
