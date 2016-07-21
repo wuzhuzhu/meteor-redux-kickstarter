@@ -33,3 +33,11 @@ storiesOf('HelloWorld', module)
 ```
 
 And `injectTapEventPlugin();` might be needed sometime.
+
+---
+
+### Add a new Module checklist:
+
++ Create a router for new component at `routes` in "client/route.js"
++ Import and add your storybook on: ".storybook/config.js"
++ Create a reducer index for this module, and import it in "/imports/redux/reducers.js"
