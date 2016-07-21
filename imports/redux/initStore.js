@@ -8,6 +8,8 @@ import thunk from 'redux-thunk';
 import reducers from './reducers';
 import Collections from '../common/collections';
 
+console.log(reducers)
+
 const routerMiddlewareInst = routerMiddleware(browserHistory)
 const store = createStore(
   reducers,

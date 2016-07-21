@@ -8,7 +8,7 @@ import { store, history } from '../imports/redux/initStore'
 import MainLayout from '../imports/modules/layout/components/MainLayout.jsx'
 import HelloWorld from '../imports/modules/layout/components/HelloWorld.jsx'
 
-const Router = ({}) => (
+const App = ({}) => (
   <Provider store={store}>
     <Router history={history}>
       <Route path="/" component={MainLayout}>
@@ -16,4 +16,6 @@ const Router = ({}) => (
       </Route>
     </Router>
   </Provider>
-)
+);
+
+export default App;
