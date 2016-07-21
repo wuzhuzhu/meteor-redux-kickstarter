@@ -2,9 +2,11 @@
   "name": "ijk-da-web",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "storybook": "start-storybook -p 9001"
   },
   "dependencies": {
+    "@kadira/react-storybook-addon-info": "^3.1.1",
     "material-ui": "^0.15.2",
     "meteor-node-stubs": "~0.2.0",
     "react": "^15.2.1",
@@ -16,5 +18,8 @@
     "redux": "^3.5.2",
     "redux-devtools": "^3.3.1",
     "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "@kadira/storybook": "^1.39.0"
   }
 }
