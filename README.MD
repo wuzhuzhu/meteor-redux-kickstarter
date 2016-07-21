@@ -2,6 +2,18 @@
 
 based on Meteor 1.3, react, redux, material-ui.
 
+### Get Started:
+1. npm i
+2. meteor
+3. rpm run storybook
+
+Your Project:
+http://localhost:3000
+Storybook for ui-components preview:
+http://localhost:9001
+
+---
+
 ### How to reveal material-ui components on storybook:
 ```
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
