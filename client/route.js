@@ -13,16 +13,17 @@ import MainLayout from '../imports/modules/layout/components/MainLayout.jsx'
 import HelloWorld from '../imports/modules/layout/components/HelloWorld.jsx'
 
 
+const routes =
+  <Route component={MainLayout}>
+    <Route path="/" component={HelloWorld} />
+  </Route>
+
 const muiTheme = getMuiTheme(defaultTheme)
 const App = ({}) => (
   <Provider store={store}>
-    <Router history={history}>
-      <MuiThemeProvider muiTheme={muiTheme}>
-        <Route path="/" component={MainLayout}>
-          <Route path="hello" component={HelloWorld}/>
-        </Route>
-      </MuiThemeProvider>
-    </Router>
+    <MuiThemeProvider muiTheme={muiTheme}>
+      <Router routes={routes} history={history} />
+    </MuiThemeProvider>
   </Provider>
 );
 
